@@ -17,6 +17,7 @@
     <%@ include file="templates/navbar2.jsp" %>
 </header>
 <body>
+
 <section class="inner-page">
     <div class="container">
         <p>
@@ -27,7 +28,7 @@
     </div>
     <div class="container" align="center">
         <%--@elvariable id="user" type="java"--%>
-        <form:form method="post" action="/login" modelAttribute="user" class="php-email-form">
+        <form:form method="post" action="/login" modelAttribute="user">
             <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
                 <form:input path="email" type="email" class="form-control" name="email" id="email"
                             placeholder="Enter Email"
@@ -40,15 +41,16 @@
                             data-rule="minlen:4" data-msg="Please enter at least 4 chars"/>
                 </container>
             </div>
+            <br>
             <button class="book-a-table-btn" type="submit">Submit</button>
         </form:form>
 
     </div>
     </div>
 </section>
-
+</main>
 </div>
-
+<br><br><br><br><br><br><br>
 <!-- ======= Footer ======= -->
 <%@ include file="templates/footer.jsp" %>
 </body>

@@ -13,8 +13,8 @@ import java.util.List;
 public class BusinessUser {
 
 
-    @OneToMany
-    @JoinColumn(name="business_user_id")
+    @OneToMany(cascade=CascadeType.ALL)
+    @JoinColumn(name="business_user_email")
     private List<Business> businesses = new ArrayList<>();
 
     @Id
@@ -27,9 +27,6 @@ public class BusinessUser {
 
     @Column(name="password")
     private String password;
-
-    @Column(name="business_id")
-    private Integer businessId;
 
 
 
@@ -70,11 +67,5 @@ public class BusinessUser {
         this.businesses = businesses;
     }
 
-    public Integer getBusiness() {
-        return businessId;
-    }
 
-    public void setBusiness(Integer businessId) {
-        this.businessId = businessId;
-    }
 }

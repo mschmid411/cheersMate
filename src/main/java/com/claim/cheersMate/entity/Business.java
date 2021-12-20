@@ -9,7 +9,7 @@ import javax.persistence.*;
 public class Business {
 
 //    @ManyToOne(optional = true)
-//    @JoinColumn(name = "business_user_id")
+//    @JoinColumn(name = "business_user_email")
 //    private BusinessUser businessUser;
 
     @Id
@@ -34,10 +34,10 @@ public class Business {
     private String neighborhood;
 
     @Column(name = "start_time")
-    private int startTime;
+    private String startTime;
 
     @Column(name = "end_time")
-    private int endTime;
+    private String endTime;
 
     @Column(name = "hh_days")
     private String hhDays;
@@ -50,26 +50,29 @@ public class Business {
 
     @Column(name = "wifi")
     @Basic(optional = true)
-    private boolean wifi;
+    private String wifi;
 
     @Basic(optional = true)
     @Column(name = "tvs")
-    private boolean tvs;
+    private String tvs;
 
     @Basic(optional = true)
     @Column(name = "trivia")
-    private boolean trivia;
+    private String trivia;
 
-    @Basic(optional = true)
-    @Column(name = "business_user_id")
-    private Integer businessUserId;
+//    @Basic(optional = true)
+//    @Column(name = "business_user_id")
+//    private Integer businessUserId;
+
+    @Column(name = "business_user_email")
+    private String businessUserEmail;
 
 
     public Business() {
 
     }
 
-    public Business(Integer id, String bizName, String phone, String street, String zipcode, String neighborhood, int startTime, int endTime, String hhDays, String website, String specials, boolean wifi, boolean tvs, boolean trivia, Integer businessUserId) {
+    public Business(Integer id, String bizName, String phone, String street, String zipcode, String neighborhood, String startTime, String endTime, String hhDays, String website, String specials, String wifi, String tvs, String trivia, String businessUserEmail) {
 //        this.businessUser = businessUser;
         this.id = id;
         this.bizName = bizName;
@@ -85,7 +88,7 @@ public class Business {
         this.wifi = wifi;
         this.tvs = tvs;
         this.trivia = trivia;
-        this.businessUserId = businessUserId;
+        this.businessUserEmail = businessUserEmail;
     }
 
 //    public BusinessUser getBusinessUser() {
@@ -95,6 +98,8 @@ public class Business {
 //    public void setBusinessUser(BusinessUser businessUser) {
 //        this.businessUser = businessUser;
 //    }
+
+
 
     public Integer getId() {
         return id;
@@ -144,21 +149,6 @@ public class Business {
         this.neighborhood = neighborhood;
     }
 
-    public int getStartTime() {
-        return startTime;
-    }
-
-    public void setStartTime(int startTime) {
-        this.startTime = startTime;
-    }
-
-    public int getEndTime() {
-        return endTime;
-    }
-
-    public void setEndTime(int endTime) {
-        this.endTime = endTime;
-    }
 
     public String getHhDays() {
         return hhDays;
@@ -184,57 +174,52 @@ public class Business {
         this.specials = specials;
     }
 
-    public boolean hasWifi() {
+
+    public String getStartTime() {
+        return startTime;
+    }
+
+    public void setStartTime(String startTime) {
+        this.startTime = startTime;
+    }
+
+    public String getEndTime() {
+        return endTime;
+    }
+
+    public void setEndTime(String endTime) {
+        this.endTime = endTime;
+    }
+
+    public String getWifi() {
         return wifi;
     }
 
-    public void setWifi(boolean wifi) {
+    public void setWifi(String wifi) {
         this.wifi = wifi;
     }
 
-    public boolean hasTvs() {
+    public String getTvs() {
         return tvs;
     }
 
-    public void setTvs(boolean tvs) {
+    public void setTvs(String tvs) {
         this.tvs = tvs;
     }
 
-    public boolean isTrivia() {
+    public String getTrivia() {
         return trivia;
     }
 
-    public void setTrivia(boolean trivia) {
+    public void setTrivia(String trivia) {
         this.trivia = trivia;
     }
 
-    public Integer getBusinessUserId() {
-        return businessUserId;
+    public String getBusinessUserEmail() {
+        return businessUserEmail;
     }
 
-    public void setBusinessUserId(Integer businessUserId) {
-        this.businessUserId = businessUserId;
-    }
-
-    public String printWifi(boolean wifi) {
-        if (hasWifi()) {
-            return "wifi";
-        } else {
-            return null;
-        }
-    }
-    public String printTvs(boolean tvs) {
-        if (hasTvs()) {
-            return "tv's";
-        } else {
-            return null;
-        }
-    }
-    public String printTrivia(boolean trivia) {
-        if (isTrivia()) {
-          return "trivia";
-        } else {
-            return null;
-        }
+    public void setBusinessUserEmail(String businessUserEmail) {
+        this.businessUserEmail = businessUserEmail;
     }
 }

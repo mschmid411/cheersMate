@@ -53,7 +53,7 @@
         <li class="nav-item">
             <a class="nav-link " href="/">
                 <i class="bi bi-grid"></i>
-                <span>Dashboard</span>
+                <span>Welcome!</span>
             </a>
         </li><!-- End Dashboard Nav -->
 
@@ -64,13 +64,13 @@
             </a>
             <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="/">
-                        <i class="bi bi-circle"></i><span>Form Elements</span>
+                    <a href="/newBusinessForm">
+                        <i class="bi bi-circle"></i><span>Add Business</span>
                     </a>
                 </li>
                 <li>
                     <a href="/">
-                        <i class="bi bi-circle"></i><span>Form Layouts</span>
+                        <i class="bi bi-circle"></i><span>Modify Business</span>
                     </a>
                 </li>
             </ul>
@@ -78,7 +78,7 @@
 
         <li class="nav-item">
             <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
-                <i class="bi bi-layout-text-window-reverse"></i><span>Tables</span><i class="bi bi-chevron-down ms-auto"></i>
+                <i class="bi bi-layout-text-window-reverse"></i><span>Add Events</span><i class="bi bi-chevron-down ms-auto"></i>
             </a>
             <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
@@ -117,14 +117,14 @@
         <li class="nav-item">
             <a class="nav-link collapsed" href="">
                 <i class="bi bi-card-list"></i>
-                <span>Register</span>
+                <span>Schedule</span>
             </a>
         </li><!-- End Register Page Nav -->
 
         <li class="nav-item">
             <a class="nav-link collapsed" href="">
                 <i class="bi bi-box-arrow-in-right"></i>
-                <span>Login</span>
+                <span>Logout</span>
             </a>
         </li><!-- End Login Page Nav -->
 
@@ -136,7 +136,7 @@
 <main id="main" class="main">
 
     <div class="pagetitle">
-        <h1>Dashboard</h1>
+        <h1>Welcome!</h1>
         <nav>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="/">Home</a></li>
@@ -174,15 +174,23 @@
 
                                 <div class="d-flex align-items-center">
                                     <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                                        <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="beer" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-beer fa-w-14 fa-fw fa-2x"><path fill="currentColor" d="M152 152v208c0 13.255-10.745 24-24 24s-24-10.745-24-24V152c0-13.255 10.745-24 24-24s24 10.745 24 24zm72-24c-13.255 0-24 10.745-24 24v208c0 13.255 10.745 24 24 24s24-10.745 24-24V152c0-13.255-10.745-24-24-24zm224 40v145.288c0 27.985-16.418 53.646-41.827 65.373L352 403.664V432c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h256c26.51 0 48 21.49 48 48v16h24c39.701 0 72 32.299 72 72zM298 80H54c-3.314 0-6 2.678-6 5.992v340.016A5.993 5.993 0 0 0 54 432h244a6 6 0 0 0 6-6V86a6 6 0 0 0-6-6zm102 88c0-13.233-10.767-24-24-24h-24v206.798l34.058-15.719c8.47-3.909 13.942-12.463 13.942-21.791V168z" class=""></path></svg>
+                                        <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="beer"
+                                             role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                             class="svg-inline--fa fa-beer fa-w-14 fa-fw fa-2x">
+                                            <path fill="currentColor"
+                                                  d="M152 152v208c0 13.255-10.745 24-24 24s-24-10.745-24-24V152c0-13.255 10.745-24 24-24s24 10.745 24 24zm72-24c-13.255 0-24 10.745-24 24v208c0 13.255 10.745 24 24 24s24-10.745 24-24V152c0-13.255-10.745-24-24-24zm224 40v145.288c0 27.985-16.418 53.646-41.827 65.373L352 403.664V432c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h256c26.51 0 48 21.49 48 48v16h24c39.701 0 72 32.299 72 72zM298 80H54c-3.314 0-6 2.678-6 5.992v340.016A5.993 5.993 0 0 0 54 432h244a6 6 0 0 0 6-6V86a6 6 0 0 0-6-6zm102 88c0-13.233-10.767-24-24-24h-24v206.798l34.058-15.719c8.47-3.909 13.942-12.463 13.942-21.791V168z"
+                                                  class=""></path>
+                                        </svg>
                                     </div>
                                     <div class="ps-3">
                                         <h6>145</h6>
-                                        <span class="text-success small pt-1 fw-bold">12%</span> <span class="text-muted small pt-2 ps-1">increase</span>
+                                        <span class="text-success small pt-1 fw-bold">12%</span> <span
+                                            class="text-muted small pt-2 ps-1">increase</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </div><!-- End Sales Card -->
 
                     <!-- Revenue Card -->
@@ -239,7 +247,7 @@
                             </div>
 
                             <div class="card-body">
-                                <h5 class="card-title">CheersMate! Customers <span>| This Year</span></h5>
+                                <h5 class="card-title">CheersMate!<span>| This Year</span></h5>
 
                                 <div class="d-flex align-items-center">
                                     <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
@@ -275,7 +283,17 @@
                             </div>
 
                             <div class="card-body">
-                                <h5 class="card-title">Upcoming Events<span>/This Month</span></h5>
+                                <h5 class="card-title">Upcoming Events<span>/Next Month</span></h5>
+                                <h3 class="card-title">
+                                JANUARY - "Gin"uary
+                                <br><br>
+                                1 January – National Bloody Mary Day (Hippo Bloody Mary)<br><br>
+                                11 January – National Hot Toddy Day (How to Make Hot Toddy) <br><br>
+                                17 January – National Hot Buttered Rum Day <br><br>
+                                25 January – Burns Night (Burns Night Cocktail)<br><br>
+                                25 January – National Irish Coffee Day<br><br>
+                                26 January – Australia Day (Australia Day Cocktails, Australia Day Cocktail)<br>
+                                </h3>
 
                                 <!-- Line Chart -->
                                 <div id="reportsChart"></div>
@@ -358,60 +376,35 @@
 
                             <div class="card-body">
                                 <h5 class="card-title">My Happy Hours<span>| Today</span></h5>
-
                                 <table class="table table-borderless datatable">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
                                     <thead>
-                                    <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">Customer</th>
-                                        <th scope="col">Product</th>
-                                        <th scope="col">Price</th>
-                                        <th scope="col">Status</th>
+                                    <th scope="col">Business</th>
+                                    <th scope="col">Address</th>
+                                    <th scope="col">Days</th>
+                                    <th scope="col">Start</th>
+                                    <th scope="col">End</th>
                                     </tr>
                                     </thead>
-                                    <tbody>
+                                    <c:forEach items="${myBiz}" var="business">
                                     <tr>
-                                        <th scope="row"><a href="#">#2457</a></th>
-                                        <td>Brandon Jacob</td>
-                                        <td><a href="#" class="text-primary">At praesentium minu</a></td>
-                                        <td>$64</td>
-                                        <td><span class="badge bg-success">Approved</span></td>
+                                            <%--                        <td><i class="fas fa-beer"></i></td>--%>
+                                        <td>
+                                            <a href="/edit?businessId=${business.id}">${business.bizName}</a>>
+                                        </td>
+                                        <td><c:out value="${business.street}"/></td>
+                                        <td><c:out value="${business.hhDays}"/></td>
+                                        <td><c:out value="${business.startTime}pm"/></td>
+                                        <td><c:out value="${business.endTime}pm"/></td>
                                     </tr>
-                                    <tr>
-                                        <th scope="row"><a href="#">#2147</a></th>
-                                        <td>Bridie Kessler</td>
-                                        <td><a href="#" class="text-primary">Blanditiis dolor omnis similique</a></td>
-                                        <td>$47</td>
-                                        <td><span class="badge bg-warning">Pending</span></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row"><a href="#">#2049</a></th>
-                                        <td>Ashleigh Langosh</td>
-                                        <td><a href="#" class="text-primary">At recusandae consectetur</a></td>
-                                        <td>$147</td>
-                                        <td><span class="badge bg-success">Approved</span></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row"><a href="#">#2644</a></th>
-                                        <td>Angus Grady</td>
-                                        <td><a href="#" class="text-primar">Ut voluptatem id earum et</a></td>
-                                        <td>$67</td>
-                                        <td><span class="badge bg-danger">Rejected</span></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row"><a href="#">#2644</a></th>
-                                        <td>Raheem Lehner</td>
-                                        <td><a href="#" class="text-primary">Sunt similique distinctio</a></td>
-                                        <td>$165</td>
-                                        <td><span class="badge bg-success">Approved</span></td>
-                                    </tr>
-                                    </tbody>
+                                    </c:forEach>
                                 </table>
-
                             </div>
-
                         </div>
                     </div><!-- End Recent Sales -->
+
+
 
                     <!-- Top Selling -->
                     <div class="col-12">
@@ -431,54 +424,28 @@
                             </div>
 
                             <div class="card-body pb-0">
-                                <h5 class="card-title">Top Selling <span>| Today</span></h5>
+                                <h5 class="card-title">Top Happy Hours<span>| In the area</span></h5>
 
                                 <table class="table table-borderless">
                                     <thead>
                                     <tr>
-                                        <th scope="col">Preview</th>
-                                        <th scope="col">Product</th>
-                                        <th scope="col">Price</th>
-                                        <th scope="col">Sold</th>
-                                        <th scope="col">Revenue</th>
+                                        <th scope="col">Business</th>
+                                        <th scope="col">Address</th>
+                                        <th scope="col">Website</th>
+                                        <th scope="col">Zipcode</th>
                                     </tr>
                                     </thead>
                                     <tbody>
+                                    <c:forEach items="${mercato}" var="business">
                                     <tr>
-                                        <th scope="row"><a href="#"><img src="assets/img/product-1.jpg" alt=""></a></th>
-                                        <td><a href="#" class="text-primary fw-bold">Ut inventore ipsa voluptas nulla</a></td>
-                                        <td>$64</td>
-                                        <td class="fw-bold">124</td>
-                                        <td>$5,828</td>
+                                        <td><a href="#" class="text-primary fw-bold">${business.bizName}</a></td>
+                                        <td><a href="#" class="text-primary fw-bold">${business.street}</a></td>
+                                        <td>
+                                            <a href="https://www.${business.website}">${business.website}</a>
+                                        </td>
+                                        <td><a href="#" class="text-primary fw-bold">${business.zipcode}</a></td>
                                     </tr>
-                                    <tr>
-                                        <th scope="row"><a href="#"><img src="assets/img/product-2.jpg" alt=""></a></th>
-                                        <td><a href="#" class="text-primary fw-bold">Exercitationem similique doloremque</a></td>
-                                        <td>$46</td>
-                                        <td class="fw-bold">98</td>
-                                        <td>$4,508</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row"><a href="#"><img src="assets/img/product-3.jpg" alt=""></a></th>
-                                        <td><a href="#" class="text-primary fw-bold">Doloribus nisi exercitationem</a></td>
-                                        <td>$59</td>
-                                        <td class="fw-bold">74</td>
-                                        <td>$4,366</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row"><a href="#"><img src="assets/img/product-4.jpg" alt=""></a></th>
-                                        <td><a href="#" class="text-primary fw-bold">Officiis quaerat sint rerum error</a></td>
-                                        <td>$32</td>
-                                        <td class="fw-bold">63</td>
-                                        <td>$2,016</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row"><a href="#"><img src="assets/img/product-5.jpg" alt=""></a></th>
-                                        <td><a href="#" class="text-primary fw-bold">Sit unde debitis delectus repellendus</a></td>
-                                        <td>$79</td>
-                                        <td class="fw-bold">41</td>
-                                        <td>$3,239</td>
-                                    </tr>
+                                    </c:forEach>
                                     </tbody>
                                 </table>
 
@@ -517,7 +484,7 @@
                                 <div class="activite-label">32 min</div>
                                 <i class="bi bi-circle-fill activity-badge text-success align-self-start"></i>
                                 <div class="activity-content">
-                                    Quia quae rerum <a href="#" class="fw-bold text-dark">explicabo officiis</a> beatae
+                                  <a href="#" class="fw-bold text-dark">A Votre Sante!</a>
                                 </div>
                             </div><!-- End activity item-->
 
@@ -525,7 +492,7 @@
                                 <div class="activite-label">56 min</div>
                                 <i class="bi bi-circle-fill activity-badge text-danger align-self-start"></i>
                                 <div class="activity-content">
-                                    Voluptatem blanditiis blanditiis eveniet
+                                   Kan Pai!
                                 </div>
                             </div><!-- End activity item-->
 
@@ -533,7 +500,7 @@
                                 <div class="activite-label">2 hrs</div>
                                 <i class="bi bi-circle-fill activity-badge text-primary align-self-start"></i>
                                 <div class="activity-content">
-                                    Voluptates corrupti molestias voluptatem
+                                    Prost!
                                 </div>
                             </div><!-- End activity item-->
 
@@ -541,7 +508,7 @@
                                 <div class="activite-label">1 day</div>
                                 <i class="bi bi-circle-fill activity-badge text-info align-self-start"></i>
                                 <div class="activity-content">
-                                    Tempore autem saepe <a href="#" class="fw-bold text-dark">occaecati voluptatem</a> tempore
+                                    <a href="#" class="fw-bold text-dark">L'Chayim!</a>
                                 </div>
                             </div><!-- End activity item-->
 
@@ -549,7 +516,7 @@
                                 <div class="activite-label">2 days</div>
                                 <i class="bi bi-circle-fill activity-badge text-warning align-self-start"></i>
                                 <div class="activity-content">
-                                    Est sit eum reiciendis exercitationem
+                                    Slainte!
                                 </div>
                             </div><!-- End activity item-->
 
@@ -557,7 +524,7 @@
                                 <div class="activite-label">4 weeks</div>
                                 <i class="bi bi-circle-fill activity-badge text-muted align-self-start"></i>
                                 <div class="activity-content">
-                                    Dicta dolorem harum nulla eius. Ut quidem quidem sit quas
+                                    Yam Mas!
                                 </div>
                             </div><!-- End activity item-->
 
@@ -582,8 +549,11 @@
                     </div>
 
                     <div class="card-body pb-0">
-                        <h5 class="card-title">Budget Report <span>| This Month</span></h5>
-
+                        <h5 class="card-title">Reminders<span>| This Month</span></h5><br>
+                        <h4> * Staff Party - Monday, January 10th - bar closed</h4>
+                        <p><br>
+                        <h4> * Jesse's on Vacation 2/1-2/8 - don't schedule</h4>
+                        </p>
                         <div id="budgetChart" style="min-height: 400px;" class="echart"></div>
 
                         <script>
@@ -640,142 +610,142 @@
                     </div>
                 </div><!-- End Budget Report -->
 
-                <!-- Website Traffic -->
-                <div class="card">
-                    <div class="filter">
-                        <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                            <li class="dropdown-header text-start">
-                                <h6>Filter</h6>
-                            </li>
+<%--                <!-- Website Traffic -->--%>
+<%--                <div class="card">--%>
+<%--                    <div class="filter">--%>
+<%--                        <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>--%>
+<%--                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">--%>
+<%--                            <li class="dropdown-header text-start">--%>
+<%--                                <h6>Filter</h6>--%>
+<%--                            </li>--%>
 
-                            <li><a class="dropdown-item" href="#">Today</a></li>
-                            <li><a class="dropdown-item" href="#">This Month</a></li>
-                            <li><a class="dropdown-item" href="#">This Year</a></li>
-                        </ul>
-                    </div>
+<%--                            <li><a class="dropdown-item" href="#">Today</a></li>--%>
+<%--                            <li><a class="dropdown-item" href="#">This Month</a></li>--%>
+<%--                            <li><a class="dropdown-item" href="#">This Year</a></li>--%>
+<%--                        </ul>--%>
+<%--                    </div>--%>
 
-                    <div class="card-body pb-0">
-                        <h5 class="card-title">Website Traffic <span>| Today</span></h5>
+<%--                    <div class="card-body pb-0">--%>
+<%--                        <h5 class="card-title">Website Traffic <span>| Today</span></h5>--%>
 
-                        <div id="trafficChart" style="min-height: 400px;" class="echart"></div>
+<%--                        <div id="trafficChart" style="min-height: 400px;" class="echart"></div>--%>
 
-                        <script>
-                            document.addEventListener("DOMContentLoaded", () => {
-                                echarts.init(document.querySelector("#trafficChart")).setOption({
-                                    tooltip: {
-                                        trigger: 'item'
-                                    },
-                                    legend: {
-                                        top: '5%',
-                                        left: 'center'
-                                    },
-                                    series: [{
-                                        name: 'Access From',
-                                        type: 'pie',
-                                        radius: ['40%', '70%'],
-                                        avoidLabelOverlap: false,
-                                        label: {
-                                            show: false,
-                                            position: 'center'
-                                        },
-                                        emphasis: {
-                                            label: {
-                                                show: true,
-                                                fontSize: '18',
-                                                fontWeight: 'bold'
-                                            }
-                                        },
-                                        labelLine: {
-                                            show: false
-                                        },
-                                        data: [{
-                                            value: 1048,
-                                            name: 'Search Engine'
-                                        },
-                                            {
-                                                value: 735,
-                                                name: 'Direct'
-                                            },
-                                            {
-                                                value: 580,
-                                                name: 'Email'
-                                            },
-                                            {
-                                                value: 484,
-                                                name: 'Union Ads'
-                                            },
-                                            {
-                                                value: 300,
-                                                name: 'Video Ads'
-                                            }
-                                        ]
-                                    }]
-                                });
-                            });
-                        </script>
+<%--                        <script>--%>
+<%--                            document.addEventListener("DOMContentLoaded", () => {--%>
+<%--                                echarts.init(document.querySelector("#trafficChart")).setOption({--%>
+<%--                                    tooltip: {--%>
+<%--                                        trigger: 'item'--%>
+<%--                                    },--%>
+<%--                                    legend: {--%>
+<%--                                        top: '5%',--%>
+<%--                                        left: 'center'--%>
+<%--                                    },--%>
+<%--                                    series: [{--%>
+<%--                                        name: 'Access From',--%>
+<%--                                        type: 'pie',--%>
+<%--                                        radius: ['40%', '70%'],--%>
+<%--                                        avoidLabelOverlap: false,--%>
+<%--                                        label: {--%>
+<%--                                            show: false,--%>
+<%--                                            position: 'center'--%>
+<%--                                        },--%>
+<%--                                        emphasis: {--%>
+<%--                                            label: {--%>
+<%--                                                show: true,--%>
+<%--                                                fontSize: '18',--%>
+<%--                                                fontWeight: 'bold'--%>
+<%--                                            }--%>
+<%--                                        },--%>
+<%--                                        labelLine: {--%>
+<%--                                            show: false--%>
+<%--                                        },--%>
+<%--                                        data: [{--%>
+<%--                                            value: 1048,--%>
+<%--                                            name: 'Search Engine'--%>
+<%--                                        },--%>
+<%--                                            {--%>
+<%--                                                value: 735,--%>
+<%--                                                name: 'Direct'--%>
+<%--                                            },--%>
+<%--                                            {--%>
+<%--                                                value: 580,--%>
+<%--                                                name: 'Email'--%>
+<%--                                            },--%>
+<%--                                            {--%>
+<%--                                                value: 484,--%>
+<%--                                                name: 'Union Ads'--%>
+<%--                                            },--%>
+<%--                                            {--%>
+<%--                                                value: 300,--%>
+<%--                                                name: 'Video Ads'--%>
+<%--                                            }--%>
+<%--                                        ]--%>
+<%--                                    }]--%>
+<%--                                });--%>
+<%--                            });--%>
+<%--                        </script>--%>
 
-                    </div>
-                </div><!-- End Website Traffic -->
+<%--                    </div>--%>
+<%--                </div><!-- End Website Traffic -->--%>
 
-                <!-- News & Updates Traffic -->
-                <div class="card">
-                    <div class="filter">
-                        <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                            <li class="dropdown-header text-start">
-                                <h6>Filter</h6>
-                            </li>
+<%--                <!-- News & Updates Traffic -->--%>
+<%--                <div class="card">--%>
+<%--                    <div class="filter">--%>
+<%--                        <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>--%>
+<%--                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">--%>
+<%--                            <li class="dropdown-header text-start">--%>
+<%--                                <h6>Filter</h6>--%>
+<%--                            </li>--%>
 
-                            <li><a class="dropdown-item" href="#">Today</a></li>
-                            <li><a class="dropdown-item" href="#">This Month</a></li>
-                            <li><a class="dropdown-item" href="#">This Year</a></li>
-                        </ul>
-                    </div>
+<%--                            <li><a class="dropdown-item" href="#">Today</a></li>--%>
+<%--                            <li><a class="dropdown-item" href="#">This Month</a></li>--%>
+<%--                            <li><a class="dropdown-item" href="#">This Year</a></li>--%>
+<%--                        </ul>--%>
+<%--                    </div>--%>
 
-                    <div class="card-body pb-0">
-                        <h5 class="card-title">News &amp; Updates <span>| Today</span></h5>
+<%--                    <div class="card-body pb-0">--%>
+<%--                        <h5 class="card-title">News &amp; Updates <span>| Today</span></h5>--%>
 
-                        <div class="news">
-                            <div class="post-item clearfix">
-                                <img src="assets/img/news-1.jpg" alt="">
-                                <h4><a href="#">Nihil blanditiis at in nihil autem</a></h4>
-                                <p>Sit recusandae non aspernatur laboriosam. Quia enim eligendi sed ut harum...</p>
-                            </div>
+<%--                        <div class="news">--%>
+<%--                            <div class="post-item clearfix">--%>
+<%--                                <img src="assets/img/news-1.jpg" alt="">--%>
+<%--                                <h4><a href="#">Nihil blanditiis at in nihil autem</a></h4>--%>
+<%--                                <p>Sit recusandae non aspernatur laboriosam. Quia enim eligendi sed ut harum...</p>--%>
+<%--                            </div>--%>
 
-                            <div class="post-item clearfix">
-                                <img src="assets/img/news-2.jpg" alt="">
-                                <h4><a href="#">Quidem autem et impedit</a></h4>
-                                <p>Illo nemo neque maiores vitae officiis cum eum turos elan dries werona nande...</p>
-                            </div>
+<%--                            <div class="post-item clearfix">--%>
+<%--                                <img src="assets/img/news-2.jpg" alt="">--%>
+<%--                                <h4><a href="#">Quidem autem et impedit</a></h4>--%>
+<%--                                <p>Illo nemo neque maiores vitae officiis cum eum turos elan dries werona nande...</p>--%>
+<%--                            </div>--%>
 
-                            <div class="post-item clearfix">
-                                <img src="assets/img/news-3.jpg" alt="">
-                                <h4><a href="#">Id quia et et ut maxime similique occaecati ut</a></h4>
-                                <p>Fugiat voluptas vero eaque accusantium eos. Consequuntur sed ipsam et totam...</p>
-                            </div>
+<%--                            <div class="post-item clearfix">--%>
+<%--                                <img src="assets/img/news-3.jpg" alt="">--%>
+<%--                                <h4><a href="#">Id quia et et ut maxime similique occaecati ut</a></h4>--%>
+<%--                                <p>Fugiat voluptas vero eaque accusantium eos. Consequuntur sed ipsam et totam...</p>--%>
+<%--                            </div>--%>
 
-                            <div class="post-item clearfix">
-                                <img src="assets/img/news-4.jpg" alt="">
-                                <h4><a href="#">Laborum corporis quo dara net para</a></h4>
-                                <p>Qui enim quia optio. Eligendi aut asperiores enim repellendusvel rerum cuder...</p>
-                            </div>
+<%--                            <div class="post-item clearfix">--%>
+<%--                                <img src="assets/img/news-4.jpg" alt="">--%>
+<%--                                <h4><a href="#">Laborum corporis quo dara net para</a></h4>--%>
+<%--                                <p>Qui enim quia optio. Eligendi aut asperiores enim repellendusvel rerum cuder...</p>--%>
+<%--                            </div>--%>
 
-                            <div class="post-item clearfix">
-                                <img src="assets/img/news-5.jpg" alt="">
-                                <h4><a href="#">Et dolores corrupti quae illo quod dolor</a></h4>
-                                <p>Odit ut eveniet modi reiciendis. Atque cupiditate libero beatae dignissimos eius...</p>
-                            </div>
+<%--                            <div class="post-item clearfix">--%>
+<%--                                <img src="assets/img/news-5.jpg" alt="">--%>
+<%--                                <h4><a href="#">Et dolores corrupti quae illo quod dolor</a></h4>--%>
+<%--                                <p>Odit ut eveniet modi reiciendis. Atque cupiditate libero beatae dignissimos eius...</p>--%>
+<%--                            </div>--%>
 
-                        </div><!-- End sidebar recent posts-->
+<%--                        </div><!-- End sidebar recent posts-->--%>
 
-                    </div>
-                </div><!-- End News & Updates -->
+<%--                    </div>--%>
+<%--                </div><!-- End News & Updates -->--%>
 
-            </div><!-- End Right side columns -->
+<%--            </div><!-- End Right side columns -->--%>
 
-        </div>
-    </section>
+<%--        </div>--%>
+<%--    </section>--%>
 
 </main><!-- End #main -->
 
@@ -791,6 +761,7 @@
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
     </div>
+
 </footer><!-- End Footer -->
 
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -809,4 +780,5 @@
 <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>

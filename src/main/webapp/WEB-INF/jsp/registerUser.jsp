@@ -28,20 +28,22 @@
     </div>
 <div class="container" align="center">
         <%--@elvariable id="user" type="java"--%>
-        <form:form method="post" action="/registerUser" modelAttribute="user" class="php-email-form">
+        <form:form method="post" action="/registerUser" modelAttribute="user">
             <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
                 <form:input path="email" type="email" class="form-control" name="email" id="email"
-                            placeholder="Enter Email"
-                            data-rule="email" data-msg="Please enter a valid email"/>
+                            placeholder="Enter Email"/>
+<%--                            data-rule="email" data-msg="Please enter a valid email"/>--%>
                     <%--                    <div class="validate"></div>--%>
             </div>
             <div class="col-lg-4 col-md-6 form-group mt-3">
                 <form:input path="password" type="password" name="password" class="form-control" id="password"
-                            placeholder="New Password"
-                            data-rule="minlen:4" data-msg="Please enter at least 4 chars"/>
-            </container>
+                            placeholder="New Password"/>
+<%--                            data-rule="minlen:4" data-msg="Please enter at least 4 chars"/>--%>
             </div>
-                <button class="book-a-table-btn" type="submit">Submit</button>
+            <div>
+                <br>
+        <form:button class="book-a-table-btn" type="submit">Submit</form:button>
+            </div>
         </form:form>
 
     </div>
@@ -49,10 +51,12 @@
 </section>
 
 </div>
-
+</body>
+<br><br><br><br><br><br>
+<footer>
 <!-- ======= Footer ======= -->
 <%@ include file="templates/footer.jsp" %>
-</body>
+</footer>
 </html>
 
 

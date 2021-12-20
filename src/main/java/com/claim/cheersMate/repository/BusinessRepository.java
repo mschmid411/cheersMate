@@ -29,10 +29,18 @@ import java.util.List;
     @Query(value = "SELECT B from Business B")
     public List<Business> searchAll();
 
-    @Query(value = "SELECT B from Business B WHERE B.neighborhood = 'mercato' AND B.wifi = true")
+    @Query(value = "SELECT B from Business B WHERE B.neighborhood = 'mercato' AND B.wifi = 'wifi'")
     public List<Business> mercatoWifi();
 
 
+    @Query(value = "SELECT B FROM Business B WHERE B.businessUserEmail = ?1")
+    public List<Business> getAllBiz(String email);
+
+    @Query(value = "SELECT B from Business B WHERE B.neighborhood = 'mercato' AND B.trivia = 'trivia'")
+    public List<Business> mercatoTrivia();
+
+    @Query(value = "SELECT B from Business B WHERE B.neighborhood = 'mercato' AND B.tvs = 'tvs'")
+    public List<Business> mercatoTvs();
 }
 
 

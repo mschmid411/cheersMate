@@ -23,24 +23,24 @@
         <div class="table-responsive">
             <table class="table table-hover">
                 <thead>
-<%--                <tr>--%>
-<%--                    <th scope="col">Favorite</th>--%>
-                    <th scope="col">Business</th>
-                    <th scope="col">Address</th>
-                    <th scope="col">Phone</th>
-                    <th scope="col">Days</th>
-                    <th scope="col">Start</th>
-                    <th scope="col">End</th>
-                    <th scope="col">Website</th>
-                    <th scope="col">Specials</th>
-                    <th scope="col">Bonus</th>
+                <%--                <tr>--%>
+                <%--                    <th scope="col">Favorite</th>--%>
+                <th scope="col">Business</th>
+                <th scope="col">Address</th>
+                <th scope="col">Phone</th>
+                <th scope="col">Days</th>
+                <th scope="col">Start</th>
+                <th scope="col">End</th>
+                <th scope="col">Website</th>
+                <th scope="col">Specials</th>
+                <th scope="col">Bonus</th>
                 </tr>
                 </thead>
 
 
-                <c:forEach items="${mercato}" var="business">
+                <c:forEach items="${mercatoTrivia}" var="business">
                     <tr>
-<%--                        <td><i class="fas fa-beer"></i></td>--%>
+                            <%--                        <td><i class="fas fa-beer"></i></td>--%>
                         <td><c:out value="${business.bizName}"/></td>
                         <td><c:out value="${business.street}"/></td>
                         <td><c:out value="${business.phone}"/></td>

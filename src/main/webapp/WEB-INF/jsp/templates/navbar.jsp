@@ -25,18 +25,20 @@
             <ul>
                 <li><a class="nav-link scrollto active" href="/">Home</a></li>
                 <li><a class="nav-link scrollto" href="#about">About</a></li>
-                <li><a href="/login">Login</a></li>
-                <li><a class="nav-link scrollto" href="/mapTest">Find Happy Hours</a></li>
+                <c:choose>
+                    <c:when test="${loggedInUser == null || registeredUser == null}">
+                        <li><a href="/login">Login</a></li>
+                    </c:when>
+                </c:choose>
                 <li><a class="nav-link scrollto" href="#events">Events</a></li>
-                <li><a class="nav-link scrollto" href="/dashboard">Dashboard</a></li>
                 <li class="dropdown"><a href="#"><span>Search by Neighborhood</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
                         <li class="dropdown"><a href="/mercato"><span>Mercato</span> <i class="bi bi-chevron-right"></i></a>
                             <ul>
                                 <li><a href="/mercato">All Happy Hours</a></li>
-                                <li><a href="#">Featuring Wifi</a></li>
-                                <li><a href="#">Featuring Tv's</a></li>
-                                <li><a href="#">Featuring Trivia</a></li>
+                                <li><a href="/mercatoWifi">Featuring Wifi</a></li>
+                                <li><a href="/mercatoTvs">Featuring Tv's</a></li>
+                                <li><a href="/mercatoTrivia">Featuring Trivia</a></li>
                             </ul>
                         </li>
                         <li class="dropdown"><a href="/mercato"><span>Downtown</span> <i class="bi bi-chevron-right"></i></a>
@@ -61,9 +63,15 @@
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
-
-
-<a href="/registerUser" class="book-a-table-btn">Register</a>
+        <c:choose>
+            <c:when test="${loggedInUser != null || registeredUser != null}">
+                <a href="/logout" class="book-a-table-btn scrollto">Logout</a>
+            </c:when>
+            <c:otherwise>
+                <%--                <button path="register"/>--%>
+                <a href="/registerUser" class="book-a-table-btn scrollto">Register</a>
+            </c:otherwise>
+        </c:choose>
 
 </div>
 </header><!-- End Header -->

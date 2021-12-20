@@ -3,9 +3,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 
 
-
-
-<html lang="en"><head>
+<html lang="en">
+<head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -18,7 +17,8 @@
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i"
+          rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -61,55 +61,70 @@
 
         <nav id="navbar" class="navbar order-last order-lg-0">
             <ul>
-                <li><a class="nav-link scrollto " href="#hero">Home</a></li>
+                <li><a class="nav-link scrollto active" href="/">Home</a></li>
                 <li><a class="nav-link scrollto" href="#about">About</a></li>
-                <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
-                <li><a class="nav-link scrollto" href="#specials">Specials</a></li>
+<%--                <c:choose>--%>
+<%--                <c:when test="${loggedInUser == null || registeredUser == null}">--%>
+<%--                    <li><a href="/login">Login</a></li>--%>
+<%--                </c:when>--%>
+<%--               </c:choose>--%>
                 <li><a class="nav-link scrollto" href="#events">Events</a></li>
-                <li><a class="nav-link scrollto" href="#chefs">Chefs</a></li>
-                <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
-                <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+                <li class="dropdown"><a href="#"><span>Search by Neighborhood</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
-                        <li><a href="#">Drop Down 1</a></li>
-                        <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                        <li class="dropdown"><a href="/mercato"><span>Mercato</span> <i class="bi bi-chevron-right"></i></a>
                             <ul>
-                                <li><a href="#">Deep Drop Down 1</a></li>
-                                <li><a href="#">Deep Drop Down 2</a></li>
-                                <li><a href="#">Deep Drop Down 3</a></li>
-                                <li><a href="#">Deep Drop Down 4</a></li>
-                                <li><a href="#">Deep Drop Down 5</a></li>
+                                <li><a href="/mercato">All Happy Hours</a></li>
+                                <li><a href="/mercatoWifi">Featuring Wifi</a></li>
+                                <li><a href="/mercatoTvs">Featuring Tv's</a></li>
+                                <li><a href="/mercatoTrivia">Featuring Trivia</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Drop Down 2</a></li>
-                        <li><a href="#">Drop Down 3</a></li>
-                        <li><a href="#">Drop Down 4</a></li>
+                        <li class="dropdown"><a href="/mercato"><span>Downtown</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="/mercato">All Happy Hours</a></li>
+                                <li><a href="#">Featuring Wifi</a></li>
+                                <li><a href="#">Featuring Tv's</a></li>
+                                <li><a href="#">Featuring Trivia</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="/mercato"><span>North Naples</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="/mercato">All Happy Hours</a></li>
+                                <li><a href="#">Featuring Wifi</a></li>
+                                <li><a href="#">Featuring Tv's</a></li>
+                                <li><a href="#">Featuring Trivia</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
                 <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
-
-        <a href="#book-a-table" class="book-a-table-btn scrollto">Book a table</a>
-
+        <c:choose>
+            <c:when test="${loggedInUser != null || registeredUser != null}">
+                <a href="/logout" class="book-a-table-btn scrollto">Logout</a>
+            </c:when>
+            <c:otherwise>
+<%--                <button path="register"/>--%>
+                <a href="/registerUser" class="book-a-table-btn scrollto">Register</a>
+            </c:otherwise>
+        </c:choose>
     </div>
 </header><!-- End Header -->
+<!-- ======= Breadcrumbs Section ======= -->
+<section class="breadcrumbs">
+    <div class="container">
 
-
-
-    <!-- ======= Breadcrumbs Section ======= -->
-    <section class="breadcrumbs">
-        <div class="container">
-
-            <div class="d-flex justify-content-between align-items-center">
-                <ol>
-                    <li>
-                        <a href="/">Home</a>
-                    </li>
-                    <li>Inner Page</li>
-                </ol>
-            </div>
-
+        <div class="d-flex justify-content-between align-items-center">
+            <ol>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>Back</li>
+            </ol>
         </div>
-    </section><!-- End Breadcrumbs Section -->
+
+    </div>
+</section><!-- End Breadcrumbs Section -->
 

@@ -2,7 +2,7 @@ package com.claim.cheersMate.service;
 
 import com.claim.cheersMate.entity.Business;
 import com.claim.cheersMate.entity.BusinessUser;
-import com.claim.cheersMate.entity.NewRegister;
+import com.claim.cheersMate.entity.NewBusinessSetup;
 import com.claim.cheersMate.repository.BusinessUserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,12 +13,12 @@ import java.util.List;
 @Service
 public class CheersMateService {
 
-   @Autowired
-   private BusinessRepository businessRepository;
-   @Autowired
-   private BusinessUserRepository userRepository;
-   @Autowired
-   private NewRegister newRegister;
+    @Autowired
+    private BusinessRepository businessRepository;
+    @Autowired
+    private BusinessUserRepository userRepository;
+
+
 
 
     public List<Business> searchMercato() {
@@ -35,12 +35,24 @@ public class CheersMateService {
         businessRepository.save(business);
     }
 
-    public void saveBusinessUser(BusinessUser user) {
-        userRepository.save(user);
+    public BusinessUser saveBusinessUser(BusinessUser user) {
+        return userRepository.save(user);
     }
+
     public void setNewRegister(BusinessUser user, Business business) {
         userRepository.save(user);
         businessRepository.save(business);
     }
 
-}
+    public List<BusinessUser> getUsers() {
+        List<BusinessUser> users = userRepository.getAllUsers();
+        return users;
+
+    }
+//    public void saveNewBusiness(NewBusinessSetup newBusinessSetup){
+//
+
+
+
+   }
+
