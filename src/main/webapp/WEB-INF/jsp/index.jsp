@@ -72,11 +72,12 @@
                                 let's find the closest one! just click below</p>
                             <div>
 
-                                <a href="/allHappyHours" class="btn-book animate__animated animate__fadeInUp scrollto">Let's
-                                    Go!</a>
+                                <a href="/allHappyHours" class="btn-book animate__animated animate__fadeInUp scrollto">Search All!
+                                </a>
                             </div>
                         </div>
                     </div>
+
                 </div>
 
             </div>
@@ -684,19 +685,8 @@
         </div>
 
         <div class="map">
-            <iframe style="border:0; width: 100%; height: 350px;"
-                    src="https://www.google.com/maps/embed/v1/place?q=naples%20florida&key=AIzaSyAWXQAHM9R3pJM5FzaXgUU1xwbv-nvjkvI"></iframe>
+            <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen=""></iframe>
         </div>
-
-        <div class="container mt-5">
-
-            <div class="info-wrap">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 info">
-                        <i class="bi bi-geo-alt"></i>
-                        <h4>Location:</h4>
-                        <p>A108 Adam Street<br>Naples, Florida 34112</p>
-                    </div>
 
                     <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
                         <i class="bi bi-clock"></i>

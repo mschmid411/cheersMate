@@ -50,7 +50,7 @@
 </section>
 </main>
 </div>
-<br><br><br><br><br><br><br>
+<br><br>
 <!-- ======= Footer ======= -->
 <%@ include file="templates/footer.jsp" %>
 </body>

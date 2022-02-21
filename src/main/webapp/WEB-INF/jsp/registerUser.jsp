@@ -52,7 +52,7 @@
 
 </div>
 </body>
-<br><br><br><br><br><br>
+<br><br>
 <footer>
 <!-- ======= Footer ======= -->
 <%@ include file="templates/footer.jsp" %>

@@ -63,7 +63,7 @@
 
 </body>
 </main>
-<br><br><br><br>
+<br><br>
 <!-- ======= Footer ======= -->
 <%@ include file="templates/footer.jsp"%>
 <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
